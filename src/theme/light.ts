@@ -11,8 +11,8 @@ export const lightTheme: ThemeOptions = createTheme({
       main: "#2ec5d3",
     },
     background: {
-      default: "#F1F1F1",
-      paper: "#ffffff",
+      default: "#FFFFFF",
+      paper: "#F1F1F1",
     },
   },
   components: {
@@ -21,6 +21,10 @@ export const lightTheme: ThemeOptions = createTheme({
         colorInherit: {
           backgroundColor: "#FFF",
           color: "#000",
+          boxShadow: `0px 0px 0px rgba(3, 7, 18, 0.02),
+  0px 1px 1px rgba(3, 7, 18, 0.04),
+  0px 1px 1px rgba(3, 7, 18, 0.06),
+  0px 3px 3px rgba(3, 7, 18, 0.08)`,
         },
       },
       defaultProps: {

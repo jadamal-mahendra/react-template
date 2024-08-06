@@ -25,6 +25,10 @@ export const darkTheme: ThemeOptions = createTheme({
         colorInherit: {
           backgroundColor: "#1E1E1E",
           color: "#fff",
+          boxShadow: ` 0px 0px 0px rgba(3, 7, 18, 0.02),
+  0px 1px 1px rgba(3, 7, 18, 0.04),
+  0px 1px 1px rgba(3, 7, 18, 0.06),
+  0px 3px 3px rgba(3, 7, 18, 0.08)`,
         },
       },
       defaultProps: {
