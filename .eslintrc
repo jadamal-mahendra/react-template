@@ -1,0 +1,44 @@
+{
+    "settings": {
+    "import/resolver": {
+      "node": {
+        "extensions": [".js", ".jsx", ".ts", ".tsx"]
+      }
+    }
+  },
+  "extends": [
+    "react-app",
+    "react-app/jest",
+    "airbnb",
+    "airbnb-typescript",
+    "prettier"
+  ],
+  "ignorePatterns": [
+    "/public/**",
+    "/build/**",
+    "craco.config.js",
+    "craco-plugins/**",
+    "jest.config.ts",
+    "setupTests.tsx",
+    "src/MockupData/**"
+  ],
+  "plugins": ["prettier", "no-relative-import-paths"],
+  "parserOptions": {
+    "project": "./tsconfig.json"
+  },
+  "rules": {
+     "import/extensions": [
+      "error",
+      "ignorePackages",
+      {
+        "js": "never",
+        "jsx": "never",
+        "ts": "never",
+        "tsx": "never"
+      }
+    ],
+    "no-relative-import-paths/no-relative-import-paths": [
+      "error"
+    ]
+  }
+}
